@@ -9,7 +9,7 @@ export interface MyElement {
   selector: 'my-list',
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.scss'],
-  // changeDetection: ChangeDetectionStrategy.OnPush,
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ListComponent {
   @Input() set elementsLimit(limit: number) {
