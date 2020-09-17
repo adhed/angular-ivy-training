@@ -1,4 +1,6 @@
-<div *ngFor="let element of elements" class="list__element">
-  element nr {{ element + 1 }}
-  <button name="remove-btn" (click)="onRemoveBtnClick(element)">Remove me</button>
+<div *ngFor="let element of elements" (click)="onElementClick(element.index)" class="list__element element" [class.list__element--selected]="element.isSelected">
+  <span class="element__label">element nr {{ element.index + 1 }}</span>
+  <button class="element__btn" name="remove-btn" (click)="onRemoveBtnClick(element.index)">
+    Remove me
+  </button>
 </div>

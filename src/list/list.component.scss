@@ -5,19 +5,39 @@
 }
 
 .list__element {
-  align-content: center;
+  align-items: center;
   border: 1px solid black;
   background: gray;
   margin: 5px;
   display: flex;
+  flex-direction: column;
   padding: 25px;
+  pointer-events: none;
 
   &:nth-child(3n) {
     cursor: pointer;
+    pointer-events: all;
 
     &:hover {
       border: 1px solid darkgray;
-      color: lightgray;
     }
+  }
+
+  &--selected {
+    background: lightblue;
+    color: black;
+  }
+}
+
+.element {
+  &__label {
+    margin-bottom: 10px;
+  }
+
+  &__btn {
+    cursor: pointer;
+    width: 50%;
+    height: 50px;
+    pointer-events: all;
   }
 }
