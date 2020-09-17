@@ -6,8 +6,18 @@
 
 .list__element {
   align-content: center;
+  border: 1px solid black;
   background: gray;
   margin: 5px;
   display: flex;
   padding: 25px;
+
+  &:nth-child(3n) {
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid darkgray;
+      color: lightgray;
+    }
+  }
 }

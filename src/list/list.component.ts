@@ -13,6 +13,7 @@ export class ListComponent {
 
   public elements: number[] = [];
 
+
   public onRemoveBtnClick(index: number): void {
     this.elements.splice(index, 1);
   }
