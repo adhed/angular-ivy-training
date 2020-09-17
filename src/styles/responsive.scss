@@ -1,0 +1,29 @@
+$small-max-width: 479px;
+$medium-min-width: 480px;
+$medium-max-width: 767px;
+$large-min-width: 768px;
+
+
+@mixin max-small() {
+  @media (max-width: $small-max-width) {
+    @content;
+  }
+}
+
+@mixin max-medium() {
+  @media (max-width: $medium-max-width) {
+    @content;
+  }
+}
+
+@mixin min-medium() {
+  @media (min-width: $medium-min-width) {
+    @content;
+  }
+}
+
+@mixin min-large() {
+  @media (min-width: $large-min-width) {
+    @content;
+  }
+}
