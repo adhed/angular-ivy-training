@@ -1,0 +1,13 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.list__element {
+  align-content: center;
+  background: gray;
+  margin: 5px;
+  display: flex;
+  padding: 25px;
+}
