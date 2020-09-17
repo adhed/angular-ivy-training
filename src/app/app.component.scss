@@ -1,3 +1,5 @@
+@import '../styles/responsive';
+
 :host {
   display: flex;
   flex-direction: column;
@@ -23,6 +25,10 @@
     &--hidden {
       flex: 0;
     }
+
+    @include max-medium() {
+      flex: 0;
+    }
   }
 
   &__right-sidebar {
@@ -30,6 +36,10 @@
     flex: 1;
 
     &--hidden {
+      flex: 0;
+    }
+
+    @include max-small() {
       flex: 0;
     }
   }
