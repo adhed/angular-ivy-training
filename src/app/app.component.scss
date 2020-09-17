@@ -1,0 +1,43 @@
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 80px;
+  background: rgb(34, 34, 92);
+}
+
+.footer {
+  height: 80px;
+  background: rgb(65, 62, 62);
+}
+
+.content {
+  display: flex;
+
+  &__left-sidebar {
+    background: rgb(167, 207, 167);
+    flex: 1;
+
+    &--hidden {
+      flex: 0;
+    }
+  }
+
+  &__right-sidebar {
+    background: rgb(167, 207, 167);
+    flex: 1;
+
+    &--hidden {
+      flex: 0;
+    }
+  }
+
+  &__main {
+    background: darkcyan;
+    display: flex;
+    justify-content: center;
+    flex: 3;
+  }
+}

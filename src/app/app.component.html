@@ -1,6 +1,9 @@
-<header></header>
-<div class="left-sidebar"></div>
-<div class="main"></div>
-<div class="right-sidebar"></div>
-<footer></footer>
-<my-list [elementsLimit]="100"></my-list>
+<header class="header"></header>
+<section class="content">
+  <div class="content__left-sidebar content__left-sidebar--hidden"></div>
+  <div class="content__main">
+    <my-list [elementsLimit]="100"></my-list>
+  </div>
+  <div class="content__right-sidebar"></div>
+</section>
+<footer class="footer"></footer>
