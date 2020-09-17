@@ -1,3 +1,4 @@
 <div *ngFor="let element of elements" class="list__element">
-  element {{ element }}
+  element nr {{ element + 1 }}
+  <button name="remove-btn" (click)="onRemoveBtnClick(element)">Remove me</button>
 </div>
